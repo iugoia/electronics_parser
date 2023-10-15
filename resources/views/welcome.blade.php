@@ -21,7 +21,7 @@
         <header>
             <div class="py-8 flex items-center justify-between space-x-8">
                 <a href="" class="w-64">
-                    <img src="/img/logo.svg" alt="" class="w-44">
+                    <img src="{{asset('image/logo.svg')}}" alt="" class="w-44">
                 </a>
 
                 <form action="" class="w-full">
@@ -46,7 +46,7 @@
                 </a>
 
                 <a href="" class="hover:scale-[1.02] duration-300">
-                    <img src="/img/banner-2.png" alt="" class="">
+                    <img src="{{asset('image/banner-2.png')}}" alt="" class="">
                 </a>
 
                 <a href="" class="hover:opacity-50 duration-300">
@@ -61,7 +61,7 @@
                     <div class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
                         <p class="text-3xl font-bold">Телефоны</p>
 
-                        <img src="/img/iphone.png" alt="" class="w-[600px] h-[500px] mt-10">
+                        <img src="{{asset('image/iphone.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
                     </div>
                 </a>
 
@@ -71,15 +71,15 @@
                             <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
                                 <p class="text-3xl font-bold">Наушники</p>
 
-                                <img src="/img/headphone.png" alt="" class="mt-10 ml-12">
+                                <img src="{{asset('image/headphone.png')}}" alt="" class="mt-10 ml-12">
                             </div>
                         </a>
-    
+
                         <a href="">
                             <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
                                 <p class="text-3xl font-bold">Компьютеры</p>
 
-                                <img src="/img/pc.png" alt="" class="mt-6 ml-12">
+                                <img src="{{asset('image/pc.png')}}" alt="" class="mt-6 ml-12">
                             </div>
                         </a>
                     </div>
@@ -89,15 +89,15 @@
                             <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
                                 <p class="text-3xl font-bold">Планшеты</p>
 
-                                <img src="/img/ipad.png" alt="" class="mt-10 ml-8">
+                                <img src="{{asset('image/ipad.png')}}" alt="" class="mt-10 ml-8">
                             </div>
                         </a>
-    
+
                         <a href="">
                             <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
                                 <p class="text-3xl font-bold">Акустика</p>
 
-                                <img src="/img/ac.png" alt="" class="mt-12 ml-14">
+                                <img src="{{asset('image/ac.png')}}" alt="" class="mt-12 ml-14">
                             </div>
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                         </div>
 
                         <div class="w-full flex justify-center mt-5">
-                            <img src="/img/tapic.png" alt="" class="w-52">
+                            <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
                         </div>
 
                         <p class="font-medium mt-5">Смартфон Apple iPhone 14
@@ -157,7 +157,7 @@
                         </div>
 
                         <div class="w-full flex justify-center mt-5">
-                            <img src="/img/tapic.png" alt="" class="w-52">
+                            <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
                         </div>
 
                         <p class="font-medium mt-5">Смартфон Apple iPhone 14
@@ -184,7 +184,7 @@
                         </div>
 
                         <div class="w-full flex justify-center mt-5">
-                            <img src="/img/tapic.png" alt="" class="w-52">
+                            <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
                         </div>
 
                         <p class="font-medium mt-5">Смартфон Apple iPhone 14
@@ -211,7 +211,7 @@
                         </div>
 
                         <div class="w-full flex justify-center mt-5">
-                            <img src="/img/tapic.png" alt="" class="w-52">
+                            <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
                         </div>
 
                         <p class="font-medium mt-5">Смартфон Apple iPhone 14
@@ -240,27 +240,27 @@
         <section class="mt-[75px] flex justify-center">
             <div class="flex space-x-8 items-center">
                 <div class="">
-                    <img src="/img/banner-3.png" alt="" class="">
+                    <img src="{{asset('image/banner-3.png')}}" alt="" class="">
                 </div>
 
                 <div class="space-y-7">
                     <p class="text-4xl font-bold text-[#F76A63]">Как пользоваться каталогом товаров?</p>
 
                     <p class=""><span class="text-[#F76A63]">p-Katalog</span> - многофункциональный сервис поиска и сравнения цен на <br>
-                    товары в интернет-магазинах. Мы специализируемся на бытовой <br> 
+                    товары в интернет-магазинах. Мы специализируемся на бытовой <br>
                     электронике и планируем расширить ассортимент.</p>
 
                     <div class="p-5 bg-[#F76A63] rounded-2xl">
-                        <p class="font-semibold text-lg">Наша цель - помочь вам быстро найти лучшие предложения. Мы <br> 
-                        предоставляем текстовый поиск и систему фильтрации по <br> 
-                        категориям. В будущем добавим сравнение характеристик товаров. <br> 
-                        Каждая карточка товара содержит подробные спецификации и <br> 
+                        <p class="font-semibold text-lg">Наша цель - помочь вам быстро найти лучшие предложения. Мы <br>
+                        предоставляем текстовый поиск и систему фильтрации по <br>
+                        категориям. В будущем добавим сравнение характеристик товаров. <br>
+                        Каждая карточка товара содержит подробные спецификации и <br>
                         доступные цены.</p>
                     </div>
 
-                    <p class="font-medium">Мы постоянно обновляемся, добавляя новые товары и магазины. Мы <br> 
-                    используем современные технологии и ценим ваш опыт. Мы не продаем <br> 
-                    товары и не размещаем рекламу. Присоединяйтесь и узнавайте больше в <br> 
+                    <p class="font-medium">Мы постоянно обновляемся, добавляя новые товары и магазины. Мы <br>
+                    используем современные технологии и ценим ваш опыт. Мы не продаем <br>
+                    товары и не размещаем рекламу. Присоединяйтесь и узнавайте больше в <br>
                     меню ниже.</p>
                 </div>
             </div>
@@ -271,7 +271,7 @@
                 <div class="">
                     <p class="text-4xl font-bold">Подписка на рассылку акций</p>
 
-                    <p class="text-lg font-light mt-5">Давайте дружить! Оформите подписку на рассылку наших акций <br> 
+                    <p class="text-lg font-light mt-5">Давайте дружить! Оформите подписку на рассылку наших акций <br>
                     получите бесплатную доставку на свою первую покупку!</p>
 
                     <form action="" class="mt-10 flex flex-col">
@@ -285,7 +285,7 @@
                 </div>
 
                 <div class="">
-                    <img src="/img/ras.png" alt="">
+                    <img src="{{asset('image/ras.png')}}" alt="">
                 </div>
             </div>
         </section>
@@ -294,18 +294,18 @@
             <div class="flex">
                 <div class="">
                     <a href="">
-                        <img src="/img/logo.svg" alt="" class="w-52">
+                        <img src="{{asset('image/logo.svg')}}" alt="" class="w-52">
                     </a>
 
-                    <p class="mt-12">Магазин гаджетов и электроники. В нашем каталоге <br> 
-                    представлен полный ассортимент смартфонов, планшетов, <br> 
-                    смарт-часов, компонентов для умного дома и других <br> 
-                    гаджетов производства всемирно известных брендов <br> 
+                    <p class="mt-12">Магазин гаджетов и электроники. В нашем каталоге <br>
+                    представлен полный ассортимент смартфонов, планшетов, <br>
+                    смарт-часов, компонентов для умного дома и других <br>
+                    гаджетов производства всемирно известных брендов <br>
                     (Apple, Xiaomi, Samsung и т. д.). Мы продаем только <br>
-                    оригинальную качественную технику, предлагая клиентам <br> 
-                    лояльные цены, персональные акции и дисконты. <br> 
+                    оригинальную качественную технику, предлагая клиентам <br>
+                    лояльные цены, персональные акции и дисконты. <br>
                     Сведения, указанные на сайте, носят справочный характер <br>
-                    и не являются публичной офертой, определяемой статьями <br> 
+                    и не являются публичной офертой, определяемой статьями <br>
                     435, 437 ГК РФ.</p>
                 </div>
 
@@ -343,15 +343,15 @@
 
                     <div class="flex items-center space-x-5 mt-20 border-t border-white/30 pt-5">
                         <a href="" class="hover:scale-110 duration-300">
-                            <img src="/img/wa.svg" alt="">
-                        </a>
-                        
-                        <a href="" class="hover:scale-110 duration-300">
-                            <img src="/img/tg.svg" alt="">
+                            <img src="{{asset('image/wa.svg')}}" alt="">
                         </a>
 
                         <a href="" class="hover:scale-110 duration-300">
-                            <img src="/img/vk.svg" alt="">
+                            <img src="{{asset('image/tg.svg')}}" alt="">
+                        </a>
+
+                        <a href="" class="hover:scale-110 duration-300">
+                            <img src="{{asset('image/vk.svg')}}" alt="">
                         </a>
                     </div>
 
