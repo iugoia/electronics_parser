@@ -98,10 +98,10 @@
 
                 <div class="w-full">
                     <div class="grid grid-cols-3 gap-5">
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
+                        <a href="{{ route('product') }}" class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
                             <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
+                                <div class="w-14 h-14 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
+                                    <ion-icon name="heart-outline" class="w-7 h-7 text-[#F76A63]"></ion-icon>
                                 </div>
                             </div>
 
@@ -118,16 +118,15 @@
                                     <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
                                     <p class="text-sm font-medium">В НАЛИЧИИ</p>
                                 </div>
+
                                 <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
+                        <a href="{{ route('product') }}" class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
                             <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
+                                <div class="w-14 h-14 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
+                                    <ion-icon name="heart-outline" class="w-7 h-7 text-[#F76A63]"></ion-icon>
                                 </div>
                             </div>
 
@@ -144,115 +143,10 @@
                                     <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
                                     <p class="text-sm font-medium">В НАЛИЧИИ</p>
                                 </div>
+
                                 <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
                             </div>
-                        </div>
-
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
-                            <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="w-full flex justify-center mt-5">
-                                <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
-                            </div>
-
-                            <p class="font-medium mt-5">Смартфон Apple iPhone 14
-                            128 ГБ, тёмная ночь, Dual
-                            SIM (nano SIM+eSIM)</p>
-
-                            <div class="p-3 bg-[#242A38] rounded-2xl mt-5">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
-                                    <p class="text-sm font-medium">В НАЛИЧИИ</p>
-                                </div>
-                                <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
-                            <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="w-full flex justify-center mt-5">
-                                <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
-                            </div>
-
-                            <p class="font-medium mt-5">Смартфон Apple iPhone 14
-                            128 ГБ, тёмная ночь, Dual
-                            SIM (nano SIM+eSIM)</p>
-
-                            <div class="p-3 bg-[#242A38] rounded-2xl mt-5">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
-                                    <p class="text-sm font-medium">В НАЛИЧИИ</p>
-                                </div>
-                                <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
-                            <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="w-full flex justify-center mt-5">
-                                <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
-                            </div>
-
-                            <p class="font-medium mt-5">Смартфон Apple iPhone 14
-                            128 ГБ, тёмная ночь, Dual
-                            SIM (nano SIM+eSIM)</p>
-
-                            <div class="p-3 bg-[#242A38] rounded-2xl mt-5">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
-                                    <p class="text-sm font-medium">В НАЛИЧИИ</p>
-                                </div>
-                                <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
-                            <div class="flex justify-end">
-                                <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                                    <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="w-full flex justify-center mt-5">
-                                <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
-                            </div>
-
-                            <p class="font-medium mt-5">Смартфон Apple iPhone 14
-                            128 ГБ, тёмная ночь, Dual
-                            SIM (nano SIM+eSIM)</p>
-
-                            <div class="p-3 bg-[#242A38] rounded-2xl mt-5">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
-                                    <p class="text-sm font-medium">В НАЛИЧИИ</p>
-                                </div>
-                                <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
-
-                                <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
