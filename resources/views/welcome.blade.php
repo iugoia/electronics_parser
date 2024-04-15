@@ -1,170 +1,252 @@
 @extends('layouts.header-footer')
 
 @section('content')
-    <section>
-        <div class="flex items-center mt-5 space-x-5">
-            <a href="" class="hover:opacity-50 duration-300">
-                <ion-icon name="chevron-back" class="w-8 h-8 text-[#F76A63]"></ion-icon>
-            </a>
-
-            <a href="" class="hover:scale-[1.02] duration-300">
-                <img src="{{asset('image/banner-2.png')}}" alt="" class="">
-            </a>
-
-            <a href="" class="hover:opacity-50 duration-300">
-                <ion-icon name="chevron-forward" class="w-8 h-8 text-[#F76A63]"></ion-icon>
-            </a>
-        </div>
-    </section>
-
-    <section class="mt-[75px] flex flex-col items-center">
-        <div class="flex space-x-5">
-            <a href="">
-                <div class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                    <p class="text-3xl font-bold">Телефоны</p>
-
-                    <img src="{{asset('image/iphone.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
+    <section class="slider_main">
+        <div class="container">
+            <div class="slider_par">
+                <div class="slider_wrapper">
+                    <ul class="slider">
+                        <li class="slider_item">
+                            <div class="slider_ctn">
+                                <div class="slider_img">
+                                    <img src="{{asset('image/banner_iphone.png')}}" alt="dsadasd">
+                                </div>
+                                <div class="slider_content">
+                                    <h2>iPhone 15 Pro Max</h2>
+                                    <p class="badge">Взгляните поближе</p>
+                                    <ul class="characteristics_list">
+                                        <li class="characteristic_item">128 GB</li>
+                                        <li class="characteristic_item">256 GB</li>
+                                        <li class="characteristic_item">512 GB</li>
+                                        <li class="characteristic_item">1 TB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider_item">
+                            <div class="slider_ctn">
+                                <div class="slider_img">
+                                    <img src="{{asset('image/banner_iphone_r.png')}}" alt="dsadasd">
+                                </div>
+                                <div class="slider_content">
+                                    <h2>iPhone 15</h2>
+                                    <p class="badge">Взгляните поближе</p>
+                                    <ul class="characteristics_list">
+                                        <li class="characteristic_item">128 GB</li>
+                                        <li class="characteristic_item">256 GB</li>
+                                        <li class="characteristic_item">512 GB</li>
+                                        <li class="characteristic_item">1 TB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider_item">
+                            <div class="slider_ctn">
+                                <div class="slider_img slider_img_sm">
+                                    <img src="{{asset('image/banner_watch.png')}}" alt="dsadasd">
+                                </div>
+                                <div class="slider_content">
+                                    <h2>Apple Watch ultra 2</h2>
+                                    <p class="badge">Взгляните поближе</p>
+                                    <ul class="characteristics_list">
+                                        <li class="characteristic_item">128 GB</li>
+                                        <li class="characteristic_item">256 GB</li>
+                                        <li class="characteristic_item">512 GB</li>
+                                        <li class="characteristic_item">1 TB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </a>
 
-            <div class="space-y-5">
-                <div class="flex items-center space-x-5">
-                    <a href="">
-                        <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                            <p class="text-3xl font-bold">Наушники</p>
-
-                            <img src="{{asset('image/headphone.png')}}" alt="" class="mt-10 ml-12">
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                            <p class="text-3xl font-bold">Компьютеры</p>
-
-                            <img src="{{asset('image/pc.png')}}" alt="" class="mt-6 ml-12">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="flex items-center space-x-5">
-                    <a href="">
-                        <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                            <p class="text-3xl font-bold">Планшеты</p>
-
-                            <img src="{{asset('image/ipad.png')}}" alt="" class="mt-10 ml-8">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                            <p class="text-3xl font-bold">Акустика</p>
-                            
-                            <img src="{{asset('image/ac.png')}}" alt="" class="mt-12 ml-14">
-                        </div>
-                    </a>
-                </div>
+                <a href="" class="btn btn_prev">
+                    <ion-icon name="chevron-back" class="w-8 h-8 text-[#F76A63]"></ion-icon>
+                </a>
+                <a href="" class="btn btn_next">
+                    <ion-icon name="chevron-forward" class="w-8 h-8 text-[#F76A63]"></ion-icon>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="mt-[75px]">
-        <div class="flex items-center justify-between">
-            <p class="text-3xl font-bold">Популярные товары</p>
+    <section class="mini_catalog">
+        <div class="container">
+            <div class="catalog_grid">
+                <a href="" class="catalog_card">
+                    <div
+                        class="">
+                        <p class="text-3xl font-bold">Телефоны</p>
 
-            <a href="{{ route('catalog') }}" class="text-sm font-bold flex items-center justify-center text-[#F76A63] hover:scale-105 duration-300">
-                Показать все
-
-                <ion-icon name="chevron-forward-circle" class="w-6 h-6 ml-2"></ion-icon>
-            </a>
-        </div>
-
-        <div class="flex items-center mt-10 space-x-3">
-            <a href="" class="hover:opacity-50 duration-300">
-                <ion-icon name="chevron-back" class="w-8 h-8 text-[#F76A63]"></ion-icon>
-            </a>
-
-            <div class="grid grid-cols-4 gap-5">
-                <div class="p-3 bg-[#202430] w-72 rounded-3xl hover:scale-105 duration-300 cursor-pointer">
-                    <div class="flex justify-end">
-                        <div class="w-16 h-16 bg-[#242A38] rounded-full flex items-center justify-center hover:opacity-50 duration-300">
-                            <ion-icon name="heart-outline" class="w-9 h-9 text-[#F76A63]"></ion-icon>
-                        </div>
+                        <img src="{{asset('image/iphone.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
                     </div>
+                </a>
 
-                    <div class="w-full flex justify-center mt-5">
-                        <img src="{{asset('image/tapic.png')}}" alt="" class="w-52">
+                <a href="" class="catalog_card">
+                    <div
+                        class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
+                        <p class="text-3xl font-bold">Наушники</p>
+
+                        <img src="{{asset('image/headphone.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
                     </div>
+                </a>
 
-                    <p class="font-medium mt-5">Смартфон Apple iPhone 14
-                    128 ГБ, тёмная ночь, Dual
-                    SIM (nano SIM+eSIM)</p>
+                <a href="" class="catalog_card">
+                    <div
+                        class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
+                        <p class="text-3xl font-bold">Компьютеры</p>
 
-                    <div class="p-3 bg-[#242A38] rounded-2xl mt-5">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 bg-[#27CC00] rounded-full"></div>
-                            <p class="text-sm font-medium">В НАЛИЧИИ</p>
+                        <img src="{{asset('image/pc.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
+                    </div>
+                </a>
+
+                <a href="" class="catalog_card">
+                    <div
+                        class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
+                        <p class="text-3xl font-bold">Планшеты</p>
+
+                        <img src="{{asset('image/ipad.png')}}" alt="" class="mt-10 ml-8">
+                    </div>
+                </a>
+
+                <a href="" class="catalog_card">
+                    <div
+                        class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
+                        <p class="text-3xl font-bold">Акустика</p>
+
+                        <img src="{{asset('image/ac.png')}}" alt="" class="mt-12 ml-14">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog_main">
+        <div class="container">
+            <h2>Смартфоны и гаджеты купить - каталог и цены</h2>
+            <div class="catalog_main_row">
+                <p>Популярные товары</p>
+                <a href="" class="catalog_link">
+                    <span>Показать все</span>
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                </a>
+            </div>
+            <ul class="catalog_list">
+                <li class="catalog_item">
+                    <a href="#">
+                        <div class="catalog_fav">
+                            <ion-icon name="heart-circle" class="icon"></ion-icon>
                         </div>
-                        <p class="font-bold text-xl mt-3 ml-2">72 870₽</p>
+                        <div class="catalog_img">
+                            <img src="{{asset('image/headphones.png')}}" alt="">
+                        </div>
+                        <div class="catalog_info">
+                            <p class="catalog_info_name">Беспроводные наушники
+                                Apple AirPods 2 с зарядным
+                                футляром</p>
+                            <div class="catalog_price_info">
+                                <p>
+                                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                                    <span>В наличии</span>
+                                </p>
+                                <p class="price">от 11 128₽</p>
+                                <hr class="hr">
+                                <a href="#" class="btn btn_secondary">Добавить в сравнение</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="catalog_item">
+                    <a href="#">
+                        <div class="catalog_fav">
+                            <ion-icon name="heart-circle" class="icon"></ion-icon>
+                        </div>
+                        <div class="catalog_img">
+                            <img src="{{asset('image/headphones.png')}}" alt="">
+                        </div>
+                        <div class="catalog_info">
+                            <p class="catalog_info_name">Беспроводные наушники
+                                Apple AirPods 2 с зарядным
+                                футляром</p>
+                            <div class="catalog_price_info">
+                                <p>
+                                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                                    <span>В наличии</span>
+                                </p>
+                                <p class="price">от 11 128₽</p>
+                                <hr class="hr">
+                                <a href="#" class="btn btn_secondary">Добавить в сравнение</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="catalog_item">
+                    <a href="#">
+                        <div class="catalog_fav">
+                            <ion-icon name="heart-circle" class="icon"></ion-icon>
+                        </div>
+                        <div class="catalog_img">
+                            <img src="{{asset('image/headphones.png')}}" alt="">
+                        </div>
+                        <div class="catalog_info">
+                            <p class="catalog_info_name">Беспроводные наушники
+                                Apple AirPods 2 с зарядным
+                                футляром</p>
+                            <div class="catalog_price_info">
+                                <p>
+                                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                                    <span>В наличии</span>
+                                </p>
+                                <p class="price">от 11 128₽</p>
+                                <hr class="hr">
+                                <a href="#" class="btn btn_secondary">Добавить в сравнение</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="catalog_item">
+                    <a href="#">
+                        <div class="catalog_fav">
+                            <ion-icon name="heart-circle" class="icon"></ion-icon>
+                        </div>
+                        <div class="catalog_img">
+                            <img src="{{asset('image/headphones.png')}}" alt="">
+                        </div>
+                        <div class="catalog_info">
+                            <p class="catalog_info_name">Беспроводные наушники
+                                Apple AirPods 2 с зарядным
+                                футляром</p>
+                            <div class="catalog_price_info">
+                                <p>
+                                    <ion-icon name="ellipse" class="icon"></ion-icon>
+                                    <span>В наличии</span>
+                                </p>
+                                <p class="price">от 11 128₽</p>
+                                <hr class="hr">
+                                <a href="#" class="btn btn_secondary">Добавить в сравнение</a>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-                        <a href="" class="w-full h-12 flex items-center justify-center text-[#F76A63] border-2 border-[#F76A63] font-bold rounded-xl mt-3 hover:bg-[#F76A63] hover:text-white duration-300">Подробнее</a>
-                    </div>
+    <section class="about">
+        <div class="container">
+            <div class="about_row">
+                <div class="about_col about_img">
+                    <img src="{{asset('image/about.png')}}" alt="">
+                </div>
+                <div class="about_col about_info">
+                    <h2>Как пользоваться каталогом товаров?</h2>
+                    <p><strong><span class="blue">p-Katalog</span> — многофункциональный сервис поиска товаров в интернет-магазинах и сравнения цен.</strong> Мы делаем акцент на весь спектр бытовой электроники, в будущем перечень охватываемых категорий может быть расширен.</p>
+                    <p class="bg_blue">Наша цель - помочь вам быстро найти лучшие предложения. Мы предоставляем текстовый поиск и систему фильтрации по категориям. В будущем добавим сравнение характеристик товаров. Каждая карточка товара содержит подробные спецификации и доступные цены.</p>
+                    <p>Система p-Katalog постоянно развивается, мы добавляем новые товары и подключаем новые магазины. Мы используем передовые технологии и лучший пользовательский опыт. Мы не продаем товары и не размещаем рекламу. Присоединяйтесь к нашей аудитории, получите больше информации в нижнем меню.</p>
                 </div>
             </div>
-
-            <a href="" class="hover:opacity-50 duration-300">
-                <ion-icon name="chevron-forward" class="w-8 h-8 text-[#F76A63]"></ion-icon>
-            </a>
         </div>
     </section>
 
-    <section class="mt-[75px] flex justify-center">
-        <div class="flex space-x-8 items-center">
-            <div class="">
-                <img src="{{asset('image/banner-3.png')}}" alt="" class="">
-            </div>
-
-            <div class="space-y-7">
-                <p class="text-4xl font-bold text-[#F76A63]">Как пользоваться каталогом товаров?</p>
-
-                <p class=""><span class="text-[#F76A63]">p-Katalog</span> - многофункциональный сервис поиска и сравнения цен на <br>
-                товары в интернет-магазинах. Мы специализируемся на бытовой <br>
-                электронике и планируем расширить ассортимент.</p>
-
-                <div class="p-5 bg-[#F76A63] rounded-2xl">
-                    <p class="font-semibold text-lg">Наша цель - помочь вам быстро найти лучшие предложения. Мы <br>
-                    предоставляем текстовый поиск и систему фильтрации по <br>
-                    категориям. В будущем добавим сравнение характеристик товаров. <br>
-                    Каждая карточка товара содержит подробные спецификации и <br>
-                    доступные цены.</p>
-                </div>
-
-                <p class="font-medium">Мы постоянно обновляемся, добавляя новые товары и магазины. Мы <br>
-                используем современные технологии и ценим ваш опыт. Мы не продаем <br>
-                товары и не размещаем рекламу. Присоединяйтесь и узнавайте больше в <br>
-                меню ниже.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-[75px] flex justify-center">
-        <div class="flex bg-[#202430] rounded-3xl p-20 space-x-5">
-            <div class="">
-                <p class="text-4xl font-bold">Подписка на рассылку акций</p>
-
-                <p class="text-lg font-light mt-5">Давайте дружить! Оформите подписку на рассылку наших акций <br>
-                получите бесплатную доставку на свою первую покупку!</p>
-
-                <form action="" class="mt-10 flex flex-col">
-                    <label for="number">
-                        <p class="text-lg font-bold">ВВЕДИТЕ СВОЙ ТЕЛЕФОН:</p>
-                        <input type="text" name="number" id="number" class="p-3 w-96 bg-[#242A38] rounded-xl outline-none mt-2 focus:scale-105 duration-300" placeholder="+7">
-                    </label>
-                    <button class="p-4 w-96 bg-[#F76A63] font-bold rounded-xl mt-5 text-lg hover:scale-105 duration-300">Подписаться</button>
-                </form>
-            </div>
-
-            <div class="">
-                <img src="{{asset('image/ras.png')}}" alt="">
-            </div>
-        </div>
-    </section>
+    <script src="{{asset('js/slider.js')}}"></script>
 @endsection
