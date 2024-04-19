@@ -14,12 +14,14 @@
                                 <div class="slider_content">
                                     <h2>iPhone 15 Pro Max</h2>
                                     <p class="badge">Взгляните поближе</p>
-                                    <ul class="characteristics_list">
-                                        <li class="characteristic_item">128 GB</li>
-                                        <li class="characteristic_item">256 GB</li>
-                                        <li class="characteristic_item">512 GB</li>
-                                        <li class="characteristic_item">1 TB</li>
-                                    </ul>
+                                    <div class="characteristics_list">
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 pro max 256'])}}"
+                                           class="characteristic_item" target="_blank">256 GB</a>
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 pro max 512'])}}"
+                                           class="characteristic_item" target="_blank">512 GB</a>
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 pro max 1 tb'])}}"
+                                           class="characteristic_item" target="_blank">1 TB</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -31,31 +33,35 @@
                                 <div class="slider_content">
                                     <h2>iPhone 15</h2>
                                     <p class="badge">Взгляните поближе</p>
-                                    <ul class="characteristics_list">
-                                        <li class="characteristic_item">128 GB</li>
-                                        <li class="characteristic_item">256 GB</li>
-                                        <li class="characteristic_item">512 GB</li>
-                                        <li class="characteristic_item">1 TB</li>
-                                    </ul>
+                                    <div class="characteristics_list">
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 256', 'sortBy' => 'price_asc'])}}"
+                                           class="characteristic_item" target="_blank">256 GB</a>
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 512', 'sortBy' => 'price_asc'])}}"
+                                           class="characteristic_item" target="_blank">512 GB</a>
+                                        <a href="{{route('catalog', ['search' => 'iphone 15 1 tb', 'sortBy' => 'price_asc'])}}"
+                                           class="characteristic_item" target="_blank">1 TB</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="slider_item">
-                            <div class="slider_ctn">
-                                <div class="slider_img slider_img_sm">
-                                    <img src="{{asset('image/banner_watch.png')}}" alt="dsadasd">
+                            <a href="{{route('catalog', ['search' => 'Apple Watch ultra 2'])}}" class="text-decoration-none" target="_blank">
+                                <div class="slider_ctn">
+                                    <div class="slider_img slider_img_sm">
+                                        <img src="{{asset('image/banner_watch.png')}}" alt="dsadasd">
+                                    </div>
+                                    <div class="slider_content">
+                                        <h2>Apple Watch ultra 2</h2>
+                                        <p class="badge">Взгляните поближе</p>
+                                        <ul class="characteristics_list">
+                                            <li class="characteristic_item">128 GB</li>
+                                            <li class="characteristic_item">256 GB</li>
+                                            <li class="characteristic_item">512 GB</li>
+                                            <li class="characteristic_item">1 TB</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="slider_content">
-                                    <h2>Apple Watch ultra 2</h2>
-                                    <p class="badge">Взгляните поближе</p>
-                                    <ul class="characteristics_list">
-                                        <li class="characteristic_item">128 GB</li>
-                                        <li class="characteristic_item">256 GB</li>
-                                        <li class="characteristic_item">512 GB</li>
-                                        <li class="characteristic_item">1 TB</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +79,8 @@
     <section class="mini_catalog">
         <div class="container">
             <div class="catalog_grid">
-                <a href="" class="catalog_card">
+                <a href="{{route('catalog', ['filter' => ['mobile', 'telephones', 'second_hand_smartphones']])}}"
+                   class="catalog_card">
                     <div
                         class="">
                         <p class="text-3xl font-bold">Телефоны</p>
@@ -82,39 +89,39 @@
                     </div>
                 </a>
 
-                <a href="" class="catalog_card">
+                <a href="{{route('catalog', ['filter' => ['accessories']])}}" class="catalog_card">
                     <div
                         class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                        <p class="text-3xl font-bold">Наушники</p>
+                        <p class="text-3xl font-bold">Аксессуары</p>
 
                         <img src="{{asset('image/headphone.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
                     </div>
                 </a>
 
-                <a href="" class="catalog_card">
+                <a href="{{route('catalog', ['filter' => ['notebooks']])}}" class="catalog_card">
                     <div
-                        class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                        <p class="text-3xl font-bold">Компьютеры</p>
+                        class="w-[400px] h-[600px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden notebook">
+                        <p class="text-3xl font-bold">Ноутбуки и аксессуары</p>
 
-                        <img src="{{asset('image/pc.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
+                        <img src="{{asset('image/notebook.png')}}" alt="" class="w-[600px] h-[500px] mt-10">
                     </div>
                 </a>
 
-                <a href="" class="catalog_card">
+                <a href="{{route('catalog', ['filter' => ['modems_routers']])}}" class="catalog_card modem">
                     <div
                         class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                        <p class="text-3xl font-bold">Планшеты</p>
+                        <p class="text-3xl font-bold">Модемы и роутеры</p>
 
-                        <img src="{{asset('image/ipad.png')}}" alt="" class="mt-10 ml-8">
+                        <img src="{{asset('image/modem.png')}}" alt="" class="mt-10 ml-8">
                     </div>
                 </a>
 
-                <a href="" class="catalog_card">
+                <a href="{{route('catalog', ['filter' => ['smart_watches']])}}" class="catalog_card">
                     <div
                         class="w-[400px] h-[290px] bg-[#202430] rounded-2xl p-8 hover:scale-105 duration-300 overflow-hidden">
-                        <p class="text-3xl font-bold">Акустика</p>
+                        <p class="text-3xl font-bold">Смарт-часы</p>
 
-                        <img src="{{asset('image/ac.png')}}" alt="" class="mt-12 ml-14">
+                        <img src="{{asset('image/watch.png')}}" alt="" class="mt-12 ml-14">
                     </div>
                 </a>
             </div>
@@ -240,9 +247,16 @@
                 </div>
                 <div class="about_col about_info">
                     <h2>Как пользоваться каталогом товаров?</h2>
-                    <p><strong><span class="blue">p-Katalog</span> — многофункциональный сервис поиска товаров в интернет-магазинах и сравнения цен.</strong> Мы делаем акцент на весь спектр бытовой электроники, в будущем перечень охватываемых категорий может быть расширен.</p>
-                    <p class="bg_blue">Наша цель - помочь вам быстро найти лучшие предложения. Мы предоставляем текстовый поиск и систему фильтрации по категориям. В будущем добавим сравнение характеристик товаров. Каждая карточка товара содержит подробные спецификации и доступные цены.</p>
-                    <p>Система p-Katalog постоянно развивается, мы добавляем новые товары и подключаем новые магазины. Мы используем передовые технологии и лучший пользовательский опыт. Мы не продаем товары и не размещаем рекламу. Присоединяйтесь к нашей аудитории, получите больше информации в нижнем меню.</p>
+                    <p><strong><span class="blue">p-Katalog</span> — многофункциональный сервис поиска товаров в
+                            интернет-магазинах и сравнения цен.</strong> Мы делаем акцент на весь спектр бытовой
+                        электроники, в будущем перечень охватываемых категорий может быть расширен.</p>
+                    <p class="bg_blue">Наша цель - помочь вам быстро найти лучшие предложения. Мы предоставляем
+                        текстовый поиск и систему фильтрации по категориям. В будущем добавим сравнение характеристик
+                        товаров. Каждая карточка товара содержит подробные спецификации и доступные цены.</p>
+                    <p>Система p-Katalog постоянно развивается, мы добавляем новые товары и подключаем новые магазины.
+                        Мы используем передовые технологии и лучший пользовательский опыт. Мы не продаем товары и не
+                        размещаем рекламу. Присоединяйтесь к нашей аудитории, получите больше информации в нижнем
+                        меню.</p>
                 </div>
             </div>
         </div>
