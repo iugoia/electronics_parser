@@ -396,7 +396,7 @@ img {
 }
 
 .catalog_col.catalog_catalog {
-    flex: 0 0 calc(80% - 20px);
+    flex: 0 0 calc(78% - 20px);
 }
 
 .sorts_catalog .input_search {
@@ -406,6 +406,20 @@ img {
 .text-decoration-none {
     text-decoration: none;
     color: inherit;
+}
+
+.btn_clear {
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sorts_catalog {
@@ -451,6 +465,10 @@ img {
     width: 6px;
     height: 6px;
     border-radius: 100%;
+}
+
+.catalog_price_info p .icon.red {
+    background: var(--red);
 }
 
 .catalog_price_info .price {
@@ -589,7 +607,7 @@ ul, ol, li {
 }
 
 .catalog_form {
-    flex: 0 0 20%;
+    flex: 0 0 22%;
 }
 
 .catalog h1 {
@@ -602,6 +620,7 @@ ul, ol, li {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .05);
+    margin-bottom: 40px;
 }
 
 .catalog_form_group h2 {

@@ -15,5 +15,6 @@ class ShopSeeder extends Seeder
     public function run()
     {
         Shop::create(['name' => 'Мегафон', 'photo' => 'https://chelny.shop.megafon.ru/images/goods/img/logo.png?v1']);
+        Shop::create(['name' => 'Зурмаркет', 'photo' => 'https://zurmarket.ru/upload/CNext/18b/xj7kzm5rvxs1v4gjt2rhk4tqspcsswo8/logoZurOrange_black2022.png']);
     }
 }

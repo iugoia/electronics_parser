@@ -23,11 +23,11 @@ Route::post('/test', [\App\Http\Controllers\ParseDNSController::class, 'test']);
 Route::prefix('/megafon')->group(function () {
     Route::prefix('/parse')->group(function () {
         Route::get('/product-links', [\App\Http\Controllers\ParseDNSController::class, 'parseProductLinks']);
-        Route::get('/product-characteristics', [\App\Http\Controllers\ParseDNSController::class, 'parseCharacteristics']);
-        Route::get('/parseProductLinksFromCatalog', [\App\Http\Controllers\ParseDNSController::class, 'parseProductLinksFromCatalog']);
-        Route::get('/addCategoryToProductLink', [\App\Http\Controllers\ParseDNSController::class, 'addCategoryToProductLink']);
     });
 });
+
+Route::get('/zurmarket/parse', [\App\Http\Controllers\ZurmarketController::class, 'parseLinks']);
+Route::get('/zurmarket/parse/category', [\App\Http\Controllers\ZurmarketController::class, 'addCategory']);
 
 
 Route::get('/', function () {

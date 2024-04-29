@@ -1,5 +1,23 @@
 <div class="catalog_row">
     <div class="catalog_col catalog_form">
+
+        <div class="catalog_form_group">
+            <h2>Магазин</h2>
+            <ul class="catalog_form_list">
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="1" wire:model="shop" value="1">
+                    <label for="1">
+                        <p>Мегафон</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="2" wire:model="shop" value="2">
+                    <label for="2">
+                        <p>Зурмаркет</p>
+                    </label>
+                </li>
+            </ul>
+        </div>
         <div class="catalog_form_group">
             <h2>Раздел</h2>
             <ul class="catalog_form_list">
@@ -23,6 +41,13 @@
                     </label>
                 </li>
                 <li class="catalog_form_item">
+                    <input type="checkbox" id="planshety" wire:model="filter"
+                           value="planshety">
+                    <label for="planshety">
+                        <p>Планшеты</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
                     <input type="checkbox" id="notebooks" wire:model="filter" value="notebooks">
                     <label for="notebooks">
                         <p>Ноутбуки и аксессуары</p>
@@ -32,6 +57,12 @@
                     <input type="checkbox" id="accessories" wire:model="filter" value="accessories">
                     <label for="accessories">
                         <p>Аксессуары</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="elektrotransport" wire:model="filter" value="elektrotransport">
+                    <label for="elektrotransport">
+                        <p>Электро транспорт</p>
                     </label>
                 </li>
                 <li class="catalog_form_item">
@@ -46,6 +77,47 @@
                         <p>Смарт-часы</p>
                     </label>
                 </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="igrovye_pristavki_i_aksessuary_k_nim" wire:model="filter"
+                           value="igrovye_pristavki_i_aksessuary_k_nim">
+                    <label for="igrovye_pristavki_i_aksessuary_k_nim">
+                        <p>Приставки и игры</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="portativnaya_akustika_1" wire:model="filter"
+                           value="portativnaya_akustika_1">
+                    <label for="portativnaya_akustika_1">
+                        <p>Аудиотехника</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="tekhnika_xiaomi_i_meizu" wire:model="filter"
+                           value="tekhnika_xiaomi_i_meizu">
+                    <label for="tekhnika_xiaomi_i_meizu">
+                        <p>Xiaomi и Meizu</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="shlemy_i_ochki_virtualnoy_realnosti" wire:model="filter"
+                           value="shlemy_i_ochki_virtualnoy_realnosti">
+                    <label for="shlemy_i_ochki_virtualnoy_realnosti">
+                        <p>Виртуальная реальность</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="ekshn_kamery" wire:model="filter"
+                           value="ekshn_kamery">
+                    <label for="ekshn_kamery">
+                        <p>Экшн камеры</p>
+                    </label>
+                </li>
+                <li class="catalog_form_item">
+                    <input type="checkbox" id="umnyy_dom" wire:model="filter" value="umnyy_dom">
+                    <label for="umnyy_dom">
+                        <p>Умный дом</p>
+                    </label>
+                </li>
                 {{--                <li class="catalog_form_item">--}}
                 {{--                    <input type="checkbox" id="kids_watch" wire:model="filter" value="kids_watch">--}}
                 {{--                    <label for="kids_watch">--}}
@@ -57,18 +129,6 @@
                 {{--                           value="headphones_and_headsets">--}}
                 {{--                    <label for="headphones_and_headsets">--}}
                 {{--                        <p>Наушники</p>--}}
-                {{--                    </label>--}}
-                {{--                </li>--}}
-                {{--                <li class="catalog_form_item">--}}
-                {{--                    <input type="checkbox" id="portable_acoustics" wire:model="filter" value="portable_acoustics">--}}
-                {{--                    <label for="portable_acoustics">--}}
-                {{--                        <p>Аудиотехника</p>--}}
-                {{--                    </label>--}}
-                {{--                </li>--}}
-                {{--                <li class="catalog_form_item">--}}
-                {{--                    <input type="checkbox" id="smart_house" wire:model="filter" value="smart_house">--}}
-                {{--                    <label for="smart_house">--}}
-                {{--                        <p>Умный дом</p>--}}
                 {{--                    </label>--}}
                 {{--                </li>--}}
                 {{--                <li class="catalog_form_item">--}}
@@ -97,6 +157,7 @@
                 {{--                </li>--}}
             </ul>
         </div>
+        <button type="button" class="btn_clear" wire:click="clearAllFilters">Очистить все</button>
     </div>
     <div class="catalog_col catalog_catalog">
         <div class="sorts_catalog">
@@ -151,10 +212,17 @@
                             <p class="catalog_info_name">{{$product->name}}</p>
                         </a>
                         <div class="catalog_price_info">
-                            <p>
-                                <span class="circle icon"></span>
-                                <span>В наличии</span>
-                            </p>
+                            @if ($product->actual_price > 0)
+                                <p>
+                                    <span class="circle icon"></span>
+                                    <span>В наличии</span>
+                                </p>
+                            @else
+                                <p>
+                                    <span class="circle icon red"></span>
+                                    <span>Нет в наличии</span>
+                                </p>
+                            @endif
                             <p class="price">от {{ number_format($product->actual_price, 0, '', ' ') }}₽</p>
                             <hr class="hr">
                             @php

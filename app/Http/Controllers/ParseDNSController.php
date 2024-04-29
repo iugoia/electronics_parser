@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Enums\CategoryEnum;
 use App\Http\Services\ParseService;
 use App\Models\MegafonProductLink;
 use App\Models\Product;
@@ -60,13 +59,14 @@ class ParseDNSController extends Controller
             foreach ($catalogLinks as $link) {
                 $arrDataProductLinks = $this->parseProductLinksFromCatalog($link);
             }
+            $links = MegafonProductLink::pluck('link');
+
+            foreach ($links as $link) {
+                $this->parseCharacteristics($link);
+            }
         }
 
         $this->addCategoryToProductLink();
-
-        return response()->json([
-            'links' => $arrDataProductLinks
-        ]);
     }
 
     public function parseCharacteristics($url)
